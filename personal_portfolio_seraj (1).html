@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD SERAJ ANSARI | AI Enthusiast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="bg-[#0f0f0f] text-white font-sans">
+  <header id="hero" class="h-screen flex flex-col justify-center items-center text-center px-4 relative">
+    <img src="imgp.jpg" alt="MD SERAJ ANSARI" class="absolute inset-0 object-cover w-full h-full opacity-20 z-0" />
+    <div class="z-10">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-4 text-lime-400">Hi, I'm <span class="typed text-lime-300"></span></h1>
+      <p class="text-lg sm:text-xl text-gray-200">Future AI Engineer | Data Science @ IIT Madras</p>
+    </div>
+  </header>
+
+  <nav class="flex justify-center gap-6 py-4 bg-[#1a1a1a] sticky top-0 z-50 shadow-md">
+    <a href="https://www.linkedin.com/in/serajlink" target="_blank" class="text-lime-300 hover:underline">LinkedIn</a>
+    <a href="https://github.com/serajxaiops" target="_blank" class="text-lime-300 hover:underline">GitHub</a>
+    <a href="https://instagram.com/hello.seraj" target="_blank" class="text-lime-300 hover:underline">Instagram</a>
+    <a href="mailto:acadseraj@gmail.com" class="text-lime-300 hover:underline">Email</a>
+  </nav>
+
+  <section id="about" class="max-w-3xl mx-auto px-4 py-20 opacity-0 transition-opacity duration-1000">
+    <h2 class="text-3xl font-bold text-lime-300 mb-4">About Me</h2>
+    <p class="mb-4 text-gray-200">I am <strong class="text-white">MD SERAJ ANSARI</strong>, a BS Data Science student at IIT Madras, driven by curiosity and fueled by ambition. I am on a mission to become a world-class AI Engineer who builds real-world impact solutions.</p>
+    <p class="mb-4 text-gray-200">I believe in building systems that empower others. My passion for technology started early and is only getting stronger. I’m currently focused on learning full-stack development, cloud, machine learning, and how to build scalable AI-driven tools.</p>
+    <p class="text-gray-200">Besides tech, I’m deeply interested in entrepreneurship and personal growth. I want to create startups that solve real problems for real people, starting with tools in healthcare, finance, and education.</p>
+  </section>
+
+  <section id="skills" class="max-w-3xl mx-auto px-4 py-20 opacity-0 transition-opacity duration-1000">
+    <h2 class="text-3xl font-bold text-lime-300 mb-4">Skills</h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-300">
+      <li>Python, C++, JavaScript</li>
+      <li>Machine Learning, Deep Learning</li>
+      <li>HTML, CSS, React.js</li>
+      <li>SQL, MongoDB</li>
+      <li>Git, GitHub, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="max-w-3xl mx-auto px-4 py-20 opacity-0 transition-opacity duration-1000">
+    <h2 class="text-3xl font-bold text-lime-300 mb-4">Projects</h2>
+    <div class="space-y-6">
+      <div class="bg-[#1e1e1e] p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold text-white mb-2">AI Tax Assistant</h3>
+        <p class="text-gray-300">An AI system designed to assist accountants by automatically calculating tax for individuals and businesses.</p>
+      </div>
+      <div class="bg-[#1e1e1e] p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold text-white mb-2">Low-Cost Pathology Web Platform</h3>
+        <p class="text-gray-300">A digital tool to help small labs generate and store patient reports with OTP-based access.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1a1a1a] text-center py-6 text-gray-400">
+    <p>Connect with me via <a href="mailto:mdseraj@example.com" class="text-lime-300 hover:underline">Email</a>, <a href="https://www.linkedin.com/in/serajlink" target="_blank" class="text-lime-300 hover:underline">LinkedIn</a>, <a href="https://github.com/serajxaiops" target="_blank" class="text-lime-300 hover:underline">GitHub</a>, <a href="https://instagram.com" target="_blank" class="text-lime-300 hover:underline">Instagram</a></p>
+  </footer>
+
+  <script>
+    new Typed('.typed', {
+      strings: ["MD SERAJ ANSARI", "an aspiring AI Engineer", "a Data Science student at IIT Madras", "a future founder"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    const reveals = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      for (let el of reveals) {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) el.classList.add('opacity-100');
+      }
+    });
+  </script>
+</body>
+</html>
